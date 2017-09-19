@@ -9,8 +9,8 @@
 
 user_email = input("Please enter an email-address: ")
 
-def name_from_email(email):
-    name = user_email.split("@")
+def name_from_email(email):  
+    name = email.split("@")
     first_last = name[0].split(".")
     return first_last[1].capitalize() + " " + first_last[0].capitalize()
 
