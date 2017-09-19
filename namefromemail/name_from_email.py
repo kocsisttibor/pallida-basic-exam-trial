@@ -9,8 +9,19 @@
 
 user_email = input("Please enter an email-address: ")
 
+def valid_email(email):
+    valid_email = False
+    while valid_email == False:
+        if email.count(".") != 2 or email.count("@") != 1:
+            print("Email-addresses with exactly two . and one @ characters are only excepted")
+            email = input("Please enter an email-address: ")
+        else:
+            valid_email = True
+    return email
+
+
 def name_from_email(email):  
-    name = email.split("@")
+    name = valid_email(email).split("@")
     first_last = name[0].split(".")
     return first_last[1].capitalize() + " " + first_last[0].capitalize()
 
