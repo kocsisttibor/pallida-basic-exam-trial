@@ -8,7 +8,13 @@ dictionary = [
 
 
 def add_word(hun_word, eng_word):
-    pass
+    new_dict = {}
+    new_dict[hun_word] = eng_word
+    dictionary.append(new_dict)
+
+add_word("citrom", "lemon")
+
+print(dictionary)
 
 # Implement these methods. They should return the translation of the given
 # word form the list 'dictionary'
