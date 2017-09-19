@@ -34,4 +34,4 @@ The application is accepted if:
 ###  What is the difference between id and class in CSS? [2p]
 #### Your answer:
 
-Both of them are tools to make tags referanceable. Id's are to mark tags with unique name, wich is used only once in a page's code. Tags marked with a class can be referenced together, it makes easier to set common rules regarding to them
+Both of them are tools to make html tags referanceable. Id's are to mark tags with unique name, wich is used only once in a page's code. Tags marked with (or members of) a class can be referenced together, it makes easier to set common rules regarding to them
