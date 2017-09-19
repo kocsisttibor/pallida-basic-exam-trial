@@ -23,10 +23,21 @@ def keys():
     return keys
 
 
+def values():
+    values = []
+    for i in range(len(dictionary)):
+        values.append(dictionary[i][keys()[i]])
+    return values
+
+
 def translate_to_hun(eng_word):
-    pass
+    return keys()[values().index(eng_word)]
 
 
 def translate_to_eng(hun_word):
     return dictionary[keys().index(hun_word)][hun_word]
 
+add_word("citrom", "lemon")
+print(dictionary)
+
+print(translate_to_hun("lemon"))
